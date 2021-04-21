@@ -1,0 +1,87 @@
+.pieChart {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  top: -25vh;
+  left: 27vw;
+  
+}
+.chartTitle{
+  letter-spacing: .1rem;
+  font-family: 'Karantina', cursive;
+  color:#0E0101;
+  font-weight: bold;
+  font-size: 1.5rem;
+  }
+.pieDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pie-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 2px 20px 0 rgba(122, 122, 122, 0.5);
+
+}
+
+.pieGraph-breakfast {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #1b84da 30deg,
+    #022b52 30deg  280deg,
+    #6ed3f1 280deg 360deg
+  );
+}
+.pieGraph-lunch{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #1b84da 48deg,
+    #022b52 48deg 260deg,
+    #6ed3f1 260deg 360deg
+  );
+}
+.pieGraph-dinner {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #1b84da 52deg,
+    #022b52 52deg 220deg,
+    #6ed3f1 220deg 360deg
+  );
+}
+.meal{
+  letter-spacing: .2rem;
+  color:rgb(14, 1, 1);
+  font-weight: bold;
+}
+.pieFooter{
+  margin-top: 3rem;
+  letter-spacing: .1rem;
+  font-size: 1.2rem;
+}
+.carbSq{
+  color: #022b52;
+  font-size: 1.2rem;
+  }
+.fatSq{
+  color: #6ed3f1;
+  font-size: 1.2rem;
+}
+.proSq{
+  color: #1b84da;
+  font-size: 1.2rem;
+}
+@media screen  and (max-width:1100px) {
+  .pieChart{
+    position: relative;
+    left:5%;
+  }
+}

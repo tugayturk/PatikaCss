@@ -1,0 +1,36 @@
+.calculator {
+  width: 30%;
+  margin-left: 22%;
+  position: relative;
+  top: 80px;
+}
+.nutrCalculator {
+  display: flex;
+  padding-bottom: 1rem;
+  justify-content: space-evenly;
+  border-right: 3px solid gray;
+}
+.types {
+  display: flex;
+  flex-direction: column;
+}
+.calculatorTitle {
+  color: #0e0101;
+  font-family: "Karantina", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.calLeft {
+  color: #0e0101;
+  font-family: "Merriweather", serif;
+  font-size: 2.5rem;
+}
+.foodTypes {
+  color: #0e0101;
+  font-weight: 900;
+}
+@media screen and (max-width: 1060px) {
+  .nutrCalculator {
+    border: none;
+  }
+}

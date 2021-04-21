@@ -1,0 +1,184 @@
+.dashboard {
+  float: left;
+  width: 15vw;
+  height: 80vh;
+  background-color: #8ee7f3;
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  border-left: 5px solid rgb(42, 172, 177);
+  border-top: 5px solid rgb(42, 172, 177);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-height: 85vh;
+  overflow: hidden;
+  min-width: 200px;
+  position: sticky;
+  top: 2rem;
+  z-index: 2;
+  border-bottom-right-radius: 50px;
+}
+
+.logo {
+  width: 200px;
+  height: 130px;
+  margin-top: 1rem;
+}
+.ullist {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.icon {
+  margin-right: 0.5rem;
+}
+.logo2 {
+  width: 120px;
+  height: 80px;
+  margin-left: 1rem;
+}
+.list {
+  margin-left: 3.5rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+.list:hover {
+  text-decoration: underline;
+  font-size: large;
+}
+.list1 {
+  margin-left: 3.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom-right-radius: 50px;
+  cursor: pointer;
+}
+.list1:hover {
+  text-decoration: underline;
+  font-size: large;
+}
+.list2 {
+  margin-left: 3.5rem;
+  background-image: linear-gradient(to left, rgb(220, 232, 235), #3f9dc2);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+.list3 {
+  margin-left: 3.5rem;
+  padding-bottom: 1rem;
+  padding-top: 0.2rem;
+  cursor: pointer;
+}
+.list3:hover {
+  text-decoration: underline;
+  font-size: large;
+}
+.extend {
+  width: 80%;
+  margin-left: 10%;
+  text-decoration: underline;
+  color: #16191a;
+  font-family: "Karantina", cursive;
+}
+.buttonTrainer {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 19px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-image: url(../images/trainer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.buttonTrainer:hover {
+  padding: 1rem;
+}
+.buttonNutr {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 19px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-image: url(../images/foods.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.buttonNutr:hover {
+  padding: 1rem;
+}
+h4 {
+  margin: 0;
+  color: #16191a;
+}
+.total {
+  font-family: "Dancing Script", cursive;
+}
+@media screen and (max-width: 1100px), (max-height: 400px) {
+  .dashboard {
+    display: none;
+  }
+  .pieChart {
+    margin-left: 20%;
+    letter-spacing: none;
+  }
+}
+@media screen and (max-height: 550px) {
+  .logo {
+    display: none;
+  }
+
+  .ullist {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-height: 660px) {
+  .extend {
+    display: none;
+  }
+}
+.modalDisplay,
+.nutritionOptionDisplay {
+  display: none;
+}
+
+.modal,
+.nutritionOption {
+  width: 400px;
+  height: 250px;
+  background-color: rgb(92, 87, 87);
+  position: fixed;
+  top: 25%;
+  left: 40%;
+  border-radius: 10px 60px;
+}
+.modalDesign {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.options {
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+  margin-left: 2.5rem;
+  width: 70%;
+  border-radius: 4px;
+  border: 4px solid rgb(37, 148, 37);
+}
+
+.closeButton {
+  padding: 0.2rem;
+  width: 25px;
+  margin-top: 0.7rem;
+  margin-left: 45%;
+}

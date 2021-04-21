@@ -1,0 +1,66 @@
+.calendar {
+  width: 40%;
+  height: 15vh;
+  margin-left: 20%;
+  color: rgb(26, 24, 24);
+}
+.banner {
+  background-image: url(../images/banner.png);
+}
+.schedule {
+  display: flex;
+  margin-left: 1%;
+  justify-content: space-evenly;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  padding: 0.1rem;
+  cursor: pointer;
+}
+.day:hover {
+  padding: 0.3rem;
+}
+.today {
+  font-weight: bold;
+  color: white;
+  height: 70px;
+  width: 40px;
+  background-color: #022b52;
+  border-radius: 35px;
+}
+.date {
+  margin-top: 12px;
+  background-color: white;
+  color: #022b52;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+.pickedDay {
+  margin-top: 8px;
+}
+.directionIcon {
+  margin-top: 1rem;
+}
+.directionIcon:hover {
+  font-size: 1.5rem;
+}
+.doneIcon {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 50px;
+}
+.calendarIcon {
+  margin-left: 1rem;
+  margin-top: 1.3rem;
+  font-size: 1.5rem;
+}

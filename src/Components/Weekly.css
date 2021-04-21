@@ -1,0 +1,207 @@
+:root {
+  --background: white;
+  --rose: #6ED3F1;
+  --yellow: #1B84DA;
+  --green: #022B52;
+  --blue: rgb(161, 225, 236);
+  --purple: rgb(88, 98, 230);
+  --pink: rgb(230, 88, 230);
+}
+.weekly {
+  width: 450px;
+  height: 300px;
+  margin-left: 23%;
+  position: relative;
+  left:30%;
+  bottom:213px;
+  }
+.weeklyTitle {
+  color: #0E0101;
+  font-family: "Karantina", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.boxWeekly {
+  position: relative;
+  width: 450px;
+  height: 200px;
+  margin: 3% 0%;
+  background:white;
+}
+
+.containerWeekly {
+  background-color: var(--green);
+  position: absolute;
+  width: 10%;
+  height: 80%;
+  margin: 0 4em;
+  bottom: -101%;
+  left: 0;
+  animation: slideUp 1s ease forwards;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.containerWeekly:hover .percentage-Carbs::after {
+  content: "80%";
+  position: relative;
+  top: -25px;
+  font-weight: 700;
+  color: rgb(99, 91, 91);
+}
+.containerWeekly:hover .percentage-Pro::after {
+  content: "30%";
+  position: relative;
+  top: -25px;
+  font-weight: 700;
+  color: rgb(99, 91, 91);
+}
+.containerWeekly:hover .percentage-Fat::after {
+  content: "70%";
+  position: relative;
+  top: -25px;
+  font-weight: 700;
+  color: rgb(99, 91, 91);
+}
+.containerWeekly:hover .percentage-Water::after {
+  content: "50%";
+  position: relative;
+  top: -25px;
+  font-weight: 700;
+  color: rgb(99, 91, 91);
+}
+.containerWeekly:hover .percentage-Exer::after {
+  content: "100%";
+  position: relative;
+  top: -25px;
+  font-weight: 700;
+  color: rgb(99, 91, 91);
+}
+
+.skill-name {
+  position: absolute;
+  left: 0;
+  bottom: -10%;
+  width: 10%;
+  height: 10%;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 4em;
+  text-align: center;
+}
+
+.skill-name:before {
+  content: "Carbs";
+  color: var(--green);
+  text-shadow: 1px 1px 1px #000;
+}
+
+.containerWeekly:nth-of-type(2) {
+  background: var(--yellow);
+  height: 30%;
+  left: 15%;
+}
+
+.containerWeekly:nth-of-type(3) {
+  background: var(--rose);
+  height: 70%;
+  left: 30%;
+}
+
+.containerWeekly:nth-of-type(4) {
+  background: var(--blue);
+  height: 50%;
+  left: 45%;
+}
+
+.containerWeekly:nth-of-type(5) {
+  background: var(--purple);
+  height: 100%;
+  left: 60%;
+}
+
+.skill-name:nth-of-type(7) {
+  left: 15%;
+}
+
+.skill-name:nth-of-type(7):before {
+  content: "Prot.";
+  color: var(--yellow);
+}
+
+.skill-name:nth-of-type(8) {
+  left: 30%;
+}
+
+.skill-name:nth-of-type(8):before {
+  content: "Fat";
+  color: var(--rose);
+}
+
+.skill-name:nth-of-type(9) {
+  left: 45%;
+}
+
+.skill-name:nth-of-type(9):before {
+  content: "Water";
+  color: var(--blue);
+}
+
+.skill-name:nth-of-type(10) {
+  left: 60%;
+}
+
+.skill-name:nth-of-type(10):before {
+  content: "Exercise";
+  color: var(--purple);
+}
+
+@keyframes slideUp {
+  0% {
+    bottom: -101%;
+  }
+
+  100% {
+    bottom: 0%;
+  }
+}
+
+@media all and (max-width: 900px) and (min-width: 400px) {
+  .weekly{
+     width: 50%;
+  }
+  .boxWeekly {
+    height: 200px;
+    width: 400px;
+  }
+  .skill-name:nth-of-type(10):before {
+    content: "Gym";
+  }
+}
+@media all and (max-width: 400px) {
+  .boxWeekly {
+    height: 250px;
+    width: 250px;
+  }
+  .skill-name {
+    font-size: 0.5em;
+  }
+  .skill-name:nth-of-type(10):before {
+    content: "Gym";
+  }
+}
+/* @media all and (max-width: 1300px){
+.weekly{
+  display:none;
+}
+.pieChart{
+  position: relative;
+  top:25vh;
+}
+.calculator{
+  position: relative;
+  left:15vw;
+}
+  
+} */

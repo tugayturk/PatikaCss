@@ -1,0 +1,63 @@
+.box .percent {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-top: 2rem;
+}
+.box .percent svg {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.box .percent svg circle {
+  width: 100px;
+  height: 100px;
+  fill: none;
+  stroke-width: 5;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 260;
+  stroke-dashoffset: 260;
+}
+.box .percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #c4dae2;
+}
+.box .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(280 - (280 * 87) / 100);
+  stroke: #032c53;
+}
+.box .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+}
+.box .percent .number h2 {
+  font-size: 20px;
+}
+.box .percent .number h2 span {
+  font-size: 15px;
+}
+
+.box .type-1 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #c4dae2;
+}
+.box .type-1 svg circle:nth-child(2) {
+  stroke-dashoffset: calc(280 - (280 * 48) / 100);
+  stroke: #1b84da;
+}
+.box .type-2 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #c4dae2;
+}
+.box .type-2 svg circle:nth-child(2) {
+  stroke-dashoffset: calc(280 - (280 * 29) / 100);
+  stroke: #6ed3f1;
+}

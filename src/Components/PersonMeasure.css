@@ -1,0 +1,118 @@
+.measure {
+  width: 15%;
+  height: 30vh;
+  float: right;
+  position: fixed;
+  bottom: 45vh;
+  right: 1vw;
+}
+
+.info-1,
+.info-2 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.2rem;
+}
+.gender,
+.age,
+.weight,
+.height {
+  width: 50%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: whitesmoke;
+  transition:  transform 1s;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #6e7377, #4c555e);
+}
+.gender,
+.weight {
+  margin-right: 2px;
+  }
+.gender:hover,.weight:hover,.age:hover,.height:hover{
+transform: rotate(360deg);
+}
+.userMale,
+.userAge,
+.userWeight,
+.userHeight,
+.measurements {
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 500;
+  color: rgb(32, 29, 29);
+}
+.measuresInfo {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+}
+.bmiText,
+.bmrText,
+.bodyText,
+.bfText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.5rem;
+}
+.bmi {
+  border-left: 8px solid #fd0054;
+  border-radius: 15px;
+}
+.bmi:hover{
+  border:8px solid #fd0054;
+}
+.bmr {
+  border-left: 8px solid #07d7fc;
+  border-radius: 15px;
+}
+.bmr:hover{
+  border: 8px solid #07d7fc;
+}
+.bodyFat {
+  border-left: 8px solid #f0a500;
+  border-radius: 15px;
+}
+.bodyFat:hover{
+  border: 8px solid #f0a500;
+}
+.bodyType {
+  border-left: 8px solid #0dc435;
+  border-radius: 15px;
+}
+.bodyType:hover{
+  border: 8px solid #0dc435;
+}
+.Logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 1.5rem;
+}
+@media screen and (max-width: 1300px) {
+  .measure {
+    display: none;
+  }
+}
+@media screen and (max-height: 550px) {
+  .measuresInfo {
+    display: none;
+  }
+  .personalInfo {
+    margin-top: 4rem;
+  }
+  .info-1,
+  .info-2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    margin-left: 3rem;
+  }
+  .gender,
+  .weight {
+    margin-bottom: 1.5rem;
+  }
+}
